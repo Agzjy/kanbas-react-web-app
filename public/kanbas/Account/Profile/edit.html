@@ -1,0 +1,286 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        First Column
+        <tr>
+            <td valign="top">
+                <ul>
+                    <li><a href="index.html">Account</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="../home.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Commans</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </td>
+    
+            Second Column
+            <td valign="top">
+                <ul>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="../settings/index.html">Settings</a></li>
+                    <li><a href="#">ePortfolios</a></li>
+                    <li><a href="#">Shared Content</a></li>
+                    <li><a href="#">The Hub</a></li>
+                    <li><a href="#">Quickly Course Tools</a></li>
+                    <li><a href="#">Global Announcements</a></li>
+                </ul>
+            </td>
+            Third Column
+            <td valign="top">
+                <h2>Jiaying Zheng</h2>
+                <label for="text-fields-name">
+                    Name:*
+                 </label>
+                 <input type="name"
+                       value="Jiaying Zheng"
+                       id="text-fields-name"/>
+                <label for="text-fields-pronouns">
+                Pronouns:
+                </label>
+                <select>
+                    <option>None</option></br>
+                </select>
+                <p></p>
+                <label for="text-fields-title">
+                    Title:
+                 </label>
+                 <input type="title"
+                       id="text-fields-title"/>
+                <p></p>
+                <b>Contact</b>
+                <p></p>
+                No registered services, you can add some on the <a href="../settings/index.html">settings</a> page.
+                <p></p>
+                <b>Biography</b>
+                <p></p>
+                Master student in program Data Science.</br>
+                <form id="textarea">
+                    <textarea>Master student in program Data Science.</textarea>
+                 </form>
+                 <p></p>
+                 <b>Links</b>
+                 <ul>
+                    <li><a href="https://www.linkedin.com/in/jiaying-zheng-277b6922b" target="_blank">LinkedIn</a> Links to an external site.</li>
+                 </ul>
+                 <p></p>
+                 <b>Title</b>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <b>URL</b></br>
+                <input type="text" value="LinkedIn" name="title"> 
+                &rarr; 
+                <input type="text" name="links" value="https://www.linkedin.com/in/jiaying-zheng-277b6922b">
+                <a href="#">Remove</a></br>
+                <div>
+                    <button>Add another link</button></br>
+                    <button>Cancel</button>
+                    <button>Save Profile</button></br>
+                    <button>Edit Profile</button>
+                    <button>Cancel Editing</button>
+                </div>
+                 
+                 
+
+        </tr>
+    </tr>
+</table> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css"
+         rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <title>Profile</title>
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <!-- <nav class="col-md-1 d-md-block bg-dark sidebar vh-100"> -->
+            <nav class="col-12 col-md-6 col-xl-1 bg-dark" style="width: 130px;">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <div class="icon-background">
+                            <img src="../../../images/nu_icon.jpg" class="my-icon">
+                        </div>                        
+
+                        <li class="nav-item text-center my-2">
+                            <a class="nav-link active text-white" href="index.html">
+                                <i class="fas fa-user-circle fa-2x"></i> </br>Account
+                            </a>
+                                                      
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="../../Dashboard/index.html">
+                                <i class="fas fa-tachometer-alt text-danger fa-2x"></i> </br>Dashboard
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="../home.html">
+                                <i class="fas fa-book text-danger fa-2x"></i> </br>Courses
+                            </a>
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="#">
+                                <i class="far fa-calendar-alt text-danger fa-2x"></i> </br>Calendar
+                            </a>
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="#">
+                                <i class="fas fa-envelope text-danger fa-2x"></i> </br>Inbox
+                            </a>
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="#">
+                                <i class="far fa-clock text-danger fa-2x"></i> </br>History
+                            </a>
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="#">
+                                <i class="fas fa-desktop text-danger fa-2x"></i> </br>Studio
+                            </a>
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="#">
+                                <i class="fas fa-sign-out-alt text-danger fa-2x"></i> </br>Commons
+                            </a>
+                        </li>
+
+                        <li class="nav-item text-center my-2">
+                            <a class="text-white" href="#">
+                                <i class="fas fa-question-circle text-danger fa-2x"></i> </br>Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Second Column -->
+            <div class="col-md-2">
+                <div class="list-group text-red no-border">
+                    <a href="#" class="list-group-item list-group-item-action">Notifications</a>
+                    <a href="index.html" class="nav-link-2 active list-group-item list-group-item-action">Profile</a>
+                    <!-- <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true">Profile</a> -->
+                    <a href="#" class="list-group-item list-group-item-action">Files</a>
+                    <a href="../settings/index.html" class="list-group-item list-group-item-action">Settings</a>
+                    <a href="#" class="list-group-item list-group-item-action">ePortfolios</a>
+                    <a href="#" class="list-group-item list-group-item-action">Shared Content</a>
+                    <a href="#" class="list-group-item list-group-item-action">The Hub</a>
+                    <a href="#" class="list-group-item list-group-item-action">Quickly Course Tools</a>
+                    <a href="#" class="list-group-item list-group-item-action">Global Announcements</a>
+
+                </div>
+            </div>  
+
+            <div class="col-md-9 bg-white p-4">
+                <h2>Jiaying Zheng's Profile</h2>
+                <hr>
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <i class="fas fa-user-circle fa-10x"></i>
+            
+                    <div class="text-end">
+                        <a href="index.html">
+                            <button class="btn custom-btn"><i class="fas fa-pencil-alt"></i> Cancel Editing</button>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="text-fields-name" class="form-label"><b>Name:*</b></label>
+                            <input type="text" class="form-control narrow-input" id="text-fields-name" value="Jiaying Zheng">
+
+                        </div>
+            
+                        <!-- Pronouns -->
+                        <div class="mb-3">
+                            <label for="text-fields-pronouns" class="form-label"><b>Pronouns:</b></label>
+                            <select class="form-select narrower-input">
+                                <option selected>None</option>
+                                <!-- Additional options here -->
+                            </select>
+                        </div>
+            
+                        <!-- Title -->
+                        <div class="mb-3">
+                            <label for="text-fields-title" class="form-label"><b>Title:</b></label>
+                            <input type="text" class="form-control narrow-input" id="text-fields-title">
+                        </div>
+                    </br>
+            
+                        <!-- Contact -->
+                        <h4>Contact</h4>
+                        <div class="link-red">
+                    <p>No registered services, you can add some on the <a href="../settings/index.html">settings</a> page.</p>
+
+                </div>
+            </br>
+                        <!-- Biography -->
+                        <!-- Links Section -->
+            <div class="my-4">
+                <h4>Links</h4>
+                <div class="mb-3">
+                    <div class="d-flex align-items-start"> <!-- 将align-items-center改为align-items-start -->
+                        <!-- Title Label and Input -->
+                        <div class="flex-grow-1 mr-2">
+                            <label for="titleInput"><b>Title</b></label>
+                            <input type="text" class="form-control" placeholder="Title" value="LinkedIn">
+                        </div>
+                
+                        <!-- Arrow -->
+                        <div class="mr-2 d-flex align-items-center">
+                            <span class="input-group-text" id="basic-addon1" style="position: relative; top:23px;">&rarr;</span>
+                        </div>
+                
+                        <!-- URL Label and Input -->
+                        <div class="flex-grow-1 mr-2">
+                            <label for="linkInput"><b>URL</b></label>
+                            <input type="text" class="form-control" placeholder="URL" value="www.linkedin.com/in/jiaying-zheng-277b6922b">
+                        </div>
+                
+                        <!-- X Button -->
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-danger" type="button" style="position: relative; top:23px;"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn custom-btn">Add another link</button>
+                </div>
+            
+            </div>
+            <hr>
+            <div class="text-end">
+                <a href="index.html">
+                    <button class="btn custom-btn">Cancel</button>
+                    <button class="btn custom-btn save-btn">Save Profile</button>
+                </a>
+            </div>
+                           
+        </div>
+    </div>
+</body>

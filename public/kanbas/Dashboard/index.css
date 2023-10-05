@@ -1,0 +1,53 @@
+.nav-link.active {
+    background-color: white !important;
+    color: red !important;
+}
+.list-group-item.list-group-item-action.nav-link-2{
+    background-color: white !important;
+    color: black !important;
+    border: black !important;
+}
+
+.my-icon {
+    background-color: black;
+    width: 70px; /* or any size you want */
+    height: 70px; /* ensure the height is the same for square icons to prevent distortion */
+    display: flex;
+    align-items: center; /* vertically align to center */
+    justify-content: center; /* horizontally align to center */
+}
+
+.icon-background {
+    background-color: black; /* replace with the color you want */
+    display: inline-block; /* to size with the content */
+}
+.text-red {
+    color: red;
+}
+
+.text-red a.list-group-item {
+    color: red !important;
+}
+
+.no-border {
+    border: none !important;
+}
+.custom-btn {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+.link-red a {
+    color: red !important;
+}
+.card-header {
+    height: 150px; 
+}
+
+.card-body {
+    height: 120px; 
+}
+
+
+
+
