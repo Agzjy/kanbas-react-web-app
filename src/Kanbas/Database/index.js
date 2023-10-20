@@ -13,3 +13,4 @@ export default {
   enrollments,
   grades
 };
+export default database;
