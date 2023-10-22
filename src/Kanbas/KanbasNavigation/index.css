@@ -1,27 +1,65 @@
-.kanbas-sidebar {
+.wd-kanbas-navigation .wd-icon {
+    font-size: 1.6em;
+  }
+  
+  .wd-kanbas-navigation .list-group-item:first-child,
+  .wd-kanbas-navigation .list-group-item:last-child,
+  .wd-kanbas-navigation .list-group-item.active:last-child,
+  .wd-kanbas-navigation.list-group {
+    border-radius: 0px;
+  }
+  
+  .wd-kanbas-navigation {
     background-color: black;
+    list-style: none;
+    padding: 0px;
     width: 80px;
-    height: 100vh; 
-}
-
-.list-group-item {
-    padding: 7px; 
-    margin: 7px 0; 
+    margin: 0px;
+  }
+  
+  .wd-kanbas-navigation a {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
     text-align: center;
-    border: none; 
-}
-
-.active {
-    background-color: white;
-    color: red;
-}
-
-.inactive {
     background-color: black;
+    border: none;
+  }
+  
+  .wd-kanbas-navigation a.active {
+    background-color: white;
+  }
+  .wd-kanbas-navigation a.active {
+    color: red;
+  }
+  
+  .wd-kanbas-navigation a {
     color: white;
-}
+    text-decoration: none;
+  }
 
-.icon-style {
-    font-size: 24px; 
-    margin-bottom: 5px; 
-}
+  .wd-icon-account, .wd-text-account {
+    color: white;
+  }
+
+  .wd-icon-account-clicked, .wd-text-account-clicked {
+    color: red;
+  }
+
+  .wd-icon-clicked, .wd-text-clicked {
+    color: red;
+  }
+
+  .wd-icon-other {
+    color: red;
+  }
+
+  .wd-text-other {
+    color: white;
+  }
+
+  /* .wd-kanbas-navigation a i {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 5px;
+  } */
