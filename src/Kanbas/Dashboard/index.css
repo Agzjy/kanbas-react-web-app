@@ -1,0 +1,13 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 200px;  /* Define a specific height */
+}
+
+.card-header,
+.card-body {
+    flex: 1;  /* Makes them take equal heights */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
