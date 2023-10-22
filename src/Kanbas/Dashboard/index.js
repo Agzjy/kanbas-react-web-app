@@ -8,8 +8,8 @@ function Dashboard() {
     <div>
       <h1>Dashboard</h1>
       <hr />
-      <h2>Published Courses ({courses.length})</h2>
-      <div className="row">
+      <h2 style={{ paddingLeft: '20px' }}>Published Courses ({courses.length})</h2>
+      <div className="row" style={{ paddingLeft: '20px' }}>
         {courses.map((course, index) => (
           <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>
           <div className="card">
