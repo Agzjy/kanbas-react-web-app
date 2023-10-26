@@ -10,7 +10,7 @@
   }
   
   .wd-kanbas-navigation {
-    background-color: black;
+    background-color: black !important;
     list-style: none;
     padding: 0px;
     width: 80px;
@@ -22,40 +22,40 @@
     margin-bottom: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-color: black;
+    background-color: black !important;
     border: none;
   }
   
   .wd-kanbas-navigation a.active {
-    background-color: white;
+    background-color: white !important;
   }
   .wd-kanbas-navigation a.active {
-    color: red;
+    color: red !important;
   }
   
   .wd-kanbas-navigation a {
-    color: white;
+    color: white !important;
     text-decoration: none;
   }
 
   .wd-icon-account, .wd-text-account {
-    color: white;
+    color: white !important;
   }
 
   .wd-icon-account-clicked, .wd-text-account-clicked {
-    color: red;
+    color: red !important;
   }
 
   .wd-icon-clicked, .wd-text-clicked {
-    color: red;
+    color: red !important;
   }
 
   .wd-icon-other {
-    color: red;
+    color: red !important;
   }
 
   .wd-text-other {
-    color: white;
+    color: white !important;
   }
 
   /* .wd-kanbas-navigation a i {
