@@ -1,0 +1,15 @@
+.list-group-item {
+    color: red !important;
+    background-color: white !important;
+  }
+  
+  .list-group-item.active {
+    color: black !important;
+    background-color: white !important;
+  }
+  
+  a.list-group-item:focus {
+    outline: black;
+    box-shadow: 0 0 0 2px black;
+  }
+  
