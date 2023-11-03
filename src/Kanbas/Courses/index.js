@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import JsonPre from "../../Labs/a3/JsonPre.js";
+// import JsonPre from "../../Labs/a3/JsonPre.js";
 import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
@@ -13,7 +13,8 @@ import { AiOutlineMenu } from "react-icons/ai"
 function Courses() {
   const { courseId } = useParams();
   const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
+  // const [empty, kanbas, courses, id, screen] = pathname.split("/");
+  const [screen] = pathname.split("/");
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
