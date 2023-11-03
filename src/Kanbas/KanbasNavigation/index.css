@@ -1,27 +1,65 @@
-.kanbas-sidebar {
-    background-color: black;
+.wd-kanbas-navigation .wd-icon {
+    font-size: 1.6em;
+  }
+  
+  .wd-kanbas-navigation .list-group-item:first-child,
+  .wd-kanbas-navigation .list-group-item:last-child,
+  .wd-kanbas-navigation .list-group-item.active:last-child,
+  .wd-kanbas-navigation.list-group {
+    border-radius: 0px;
+  }
+  
+  .wd-kanbas-navigation {
+    background-color: black !important;
+    list-style: none;
+    padding: 0px;
     width: 80px;
-    height: 100vh; 
-}
-
-.list-group-item {
-    padding: 7px; 
-    margin: 7px 0; 
+    margin: 0px;
+  }
+  
+  .wd-kanbas-navigation a {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
     text-align: center;
-    border: none; 
-}
+    background-color: black !important;
+    border: none;
+  }
+  
+  .wd-kanbas-navigation a.active {
+    background-color: white !important;
+  }
+  .wd-kanbas-navigation a.active {
+    color: red !important;
+  }
+  
+  .wd-kanbas-navigation a {
+    color: white !important;
+    text-decoration: none;
+  }
 
-.active {
-    background-color: white;
+  .wd-icon-account, .wd-text-account {
+    color: white !important;
+  }
+
+  .wd-icon-account-clicked, .wd-text-account-clicked {
+    color: red !important;
+  }
+
+  .wd-icon-clicked, .wd-text-clicked {
+    color: red !important;
+  }
+
+  .wd-icon-other {
+    color: red !important;
+  }
+
+  .wd-text-other {
+    color: white !important;
+  }
+
+  /* .wd-kanbas-navigation a i {
     color: red;
-}
-
-.inactive {
-    background-color: black;
-    color: white;
-}
-
-.icon-style {
-    font-size: 24px; 
-    margin-bottom: 5px; 
-}
+    font-size: 2em;
+    margin-bottom: 5px;
+  } */
