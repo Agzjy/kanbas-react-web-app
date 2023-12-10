@@ -1,12 +1,37 @@
-nav a {
-    color: red;
-    background-color: white;
-    text-decoration: none; 
-    padding: 5px 10px;     
-    margin-right: 10px;    
-  }
+.course-title {
+  color: red; /* Adjust the color code as needed */
+  font-family: sans-serif;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Adjust the letter spacing as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; /* Adjust the margin as needed */
+}
 
-  nav a.active {
-    color: black;
-  }
+.page-name {
+  color: black;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between; /* This will push the title and button to opposite ends */
+  align-items: center;
+  padding-right: 150px; /* Add padding to ensure space for the button */
+}
+
+.title-container {
+  flex-grow: 1; /* This will allow the title container to take up available space */
+  display: flex;
+  align-items: center;
+}
+
+.student-view-btn {
+  right: 0;
+  padding: 0.5em 1em;  
+}
+
+
+
   

@@ -1,5 +1,90 @@
-.button-style {
-    padding: 8px 12px;  
-    font-size: 14px;  
-  }
-  
+/* General styles for the button group */
+.btn-group {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* General styles for each button */
+.btn.custom-btn {
+  flex: 1;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 10px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Styles for buttons with icons */
+.btn.custom-btn.with-icon {
+  justify-content: left;
+  padding-left: 25px;
+}
+
+/* Specific styles for the 'Publish All' button */
+.btn.custom-btn.publish-all {
+  background-color: #fff;
+  color: #28a745; /* Green color for the check icon */
+}
+
+/* Specific styles for the 'Add Module' button */
+.btn.custom-btn.add-module {
+  background-color: #dc3545; /* Red background */
+  color: #fff; /* White text */
+  border-radius: 0 6px 6px 0; /* Rounded corners on the right side */
+}
+
+/* Specific styles for the 'More Options' button with three dots */
+.btn.custom-btn.more-options {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0 6px 6px 0; /* Rounded corners on the right side */
+}
+
+/* Styles for the dropdown select - to make it look like a button */
+.custom-select {
+  border: none;
+  background-color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-appearance: none; /* Removes default style in Safari */
+  -moz-appearance: none;    /* Removes default style in Firefox */
+  appearance: none;         /* Removes default style for modern browsers */
+}
+
+/* Full-width horizontal rule */
+hr.full-width {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Styles for the list group items */
+.list-group-item {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Font Awesome icons styles */
+.fa-check, .fa-ellipsis-v, .fa-plus {
+  color: inherit; /* This makes the icon inherit the color from the parent element */
+}
+
+/* Additional styles for check icon in 'Publish All' button */
+.icon-check {
+  color: #28a745;
+}

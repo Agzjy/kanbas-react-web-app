@@ -1,0 +1,47 @@
+.right-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .group-btn.published {
+    background-color: green; /* The button background is green */
+    color: white; /* The text color inside the button is white */
+    border: none; /* Assuming you don't want any border */
+  }
+  
+  .more-options-icon {
+    margin-left: 10px; /* Space between the button and the icon */
+    color: #000; /* If you want the icon to be black or any other color */
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+  }
+  
+  .btn-danger {
+    margin-right: 10px; /* Space between buttons */
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+  }
+  
+  .btn-cancel {
+    background-color: gray !important; /* Gray background */
+    color: black; /* Black text */
+    border: 1px solid #ced4da; /* Optional: adds a border */
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  .btn-save {
+    background-color: #dc3545 !important; /* Red background */
+    color: black; /* Black text */
+    border: none; /* No border */
+  }
+  
+  

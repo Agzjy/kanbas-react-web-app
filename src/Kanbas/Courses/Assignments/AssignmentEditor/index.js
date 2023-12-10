@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
+import {  FaEllipsisV } from 'react-icons/fa';
+import './index.css';
 
 
 function AssignmentEditor() {
@@ -17,16 +19,25 @@ function AssignmentEditor() {
   };
   return (
     <div>
+      <div className="right-container">
+          <button className="btn group-btn published">+ Published</button>
+          <FaEllipsisV className="more-options-icon" />
+      </div>
+      <hr/>
       <h2>Assignment Name</h2>
       <input value={assignment.title}
              className="form-control mb-2" />
-      <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
-        Cancel
-      </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
-        Save
-      </button>
+      <div className="assignment-actions-container">
+        <div className="buttons-container">
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments`} className="btn btn-cancel">
+            Cancel
+          </Link>
+          <button onClick={handleSave} className="btn btn-save">
+            Save
+          </button>
+  </div>
+  </div>
+      <hr/>
     </div>
   );
 }

@@ -12,5 +12,18 @@
     outline: black;
     box-shadow: 0 0 0 2px black;
   }
+
+  .course-layout {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .course-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: calc(100vh - 50px); /* Adjust the height as needed */
+    margin-left: 20px; /* Adjust based on the width of your CourseNavigation */
+  }
+  
   
   
