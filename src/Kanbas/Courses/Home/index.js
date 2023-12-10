@@ -21,33 +21,35 @@ function Home() {
         <div className="col-md-3 sidebar">
 
           <div className="list-group">
-          <a href="#" className="list-group-item list-group-item-secondary">
+            <button className="list-group-item list-group-item-secondary">
               <FaFileImport /> Import Existing Content
-            </a>
-            {/* Add the rest of your list items here, each with its respective icon */}
-            <a href="#" className="list-group-item list-group-item-secondary">
+            </button>
+            <button className="list-group-item list-group-item-secondary">
               <FaHome /> Choose Home Page
-            </a>
-            <a href="#" className="list-group-item list-group-item-secondary">
+            </button>
+            <button className="list-group-item list-group-item-secondary">
               <FaStream /> View Course Stream
-            </a>
-            <a href="#" className="list-group-item list-group-item-secondary">
+            </button>
+            <button className="list-group-item list-group-item-secondary">
               <FaBullhorn /> New Announcement
-            </a>
-            <a href="#" className="list-group-item list-group-item-secondary">
+            </button>
+            <button className="list-group-item list-group-item-secondary">
+              <FaBullhorn /> New Announcement 
+            </button>
+            <button className="list-group-item list-group-item-secondary">
               <FaChartBar /> New Analytics
-            </a>
-            <a href="#" className="list-group-item list-group-item-secondary">
-              <FaBell /> View Course Notifications
-            </a>
+            </button>
+            <button className="list-group-item list-group-item-secondary">
+              < FaBell /> View Course Notifications
+            </button>
           </div>
 
           <strong className="section-title">To Do</strong>
           <hr />
           <ul className="list-unstyled todo-list">
-            <a href="#" className="text-danger">
+            <div className="text-danger">
               <span className="circle-icon">1</span> Grade A1 - ENV+HTML
-            </a>
+            </div>
           </ul>
 
           <strong className="section-title">Coming Up</strong>

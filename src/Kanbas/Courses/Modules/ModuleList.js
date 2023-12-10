@@ -8,6 +8,7 @@ function ModuleList() {
   const { courseId } = useParams();
   const modules = db.modules.filter(module => module.course === courseId);
 
+
   return (
     <>
     <div className="btn-group mb-2" role="group">
@@ -20,8 +21,8 @@ function ModuleList() {
     <hr />
 
     <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-secondary">Week 0 - INTRO<i class="fas fa-ellipsis-v float-end mx-2"></i>
-      <i class="fas fa-check float-end text-success"></i></a>
+    <button class="list-group-item list-group-item-secondary">Week 0 - INTRO<i class="fas fa-ellipsis-v float-end mx-2"></i>
+      <i class="fas fa-check float-end text-success"></i></button>
     <div class="list-group-item">
       LEARNING OBJECTIVES
       <ul class="list-group mt-2">
@@ -50,17 +51,17 @@ function ModuleList() {
       SLIDES
       <ul class="list-group mt-2">
         <li class="list-group-item">
-            <a href="#" class="text-danger">Introduction to Web Development</a>
+            <div class="text-danger">Introduction to Web Development</div>
             <i class="fas fa-ellipsis-v float-end mx-2"></i>
             <i class="fas fa-check float-end text-success"></i>
         </li>
         <li class="list-group-item">
-            <a href="#" class="text-danger">Creating an HTTP server with Node.js</a>
+            <div class="text-danger">Creating an HTTP server with Node.js</div>
             <i class="fas fa-ellipsis-v float-end mx-2"></i>
             <i class="fas fa-check float-end text-success"></i>
         </li>
         <li class="list-group-item">
-          <a href="#" class="text-danger">Creating an React Application</a>
+          <div class="text-danger">Creating an React Application</div>
           <i class="fas fa-ellipsis-v float-end mx-2"></i>
           <i class="fas fa-check float-end text-success"></i>
       </li>
@@ -68,6 +69,14 @@ function ModuleList() {
                   
     </div>
 </div>
+<div className="module-list">
+      {modules.map((module, index) => (
+        <div key={index} className="module-item">
+          {/* Render module details */}
+          {module.name}
+        </div>
+      ))}
+    </div>
 </>
   );
 }
