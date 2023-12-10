@@ -2,13 +2,11 @@ import courses from "./courses.json";
 import modules from "./modules.json";
 import assignments from "./assignments.json";
 
-
-export default {
-  courses,
+const database = { courses,
   modules,
-  assignments,
+  assignments, };
 
-};
+  export default database;
 
 // import courses from "./courses.json";
 // import modules from './modules.json'
