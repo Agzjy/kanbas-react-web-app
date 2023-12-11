@@ -1,131 +1,194 @@
 .course-card .course-image {
-    background-color: blue; 
-    height: 150px;             
+  background-color: blue; 
+  height: 150px;             
 }
 
 .card {
-    width: 100%; /* making the card use the full width of its container */
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-  
-  .course-image {
-    background-color: blue; /* Change this to the blue shade you prefer */
-    height: 150px; /* Adjust height as needed */
-    width: 100%;
-  }
-  
-  .custom-card-header {
-    background-color: blue; /* This makes sure the header is also blue, remove if not needed */
-  }
-  
-  .card-body {
-    flex: 1;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  /* This style will ensure that the text won't overflow and will add ellipsis at the end */
-  .text-ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    textOverflow: 'ellipsis';
-  }
 
-  .course-section {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .course-input-section {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between the input and buttons */
-    margin-left: 20px;
-  }
-  
-  .course-input {
-    flex: 1; /* Allows the input to take up the available width */
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .course-button {
-    margin-right: 10px; /* space between buttons */
+.course-image {
+  background-color: blue; 
+  height: 150px; 
+  width: 100%;
 }
 
-  
-  .add-button {
-    background-color: #28A745; /* You can adjust the color as per requirement */
-    color: white;
-  }
-  
-  .update-button {
-    background-color: #007BFF; /* You can adjust the color as per requirement */
-    color: white;
-  }
-  
-  .course-button:hover {
-    opacity: 0.9; /* Slight fade on hover for a more interactive feel */
-  }
-  
-  .dashboard-container {
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .course-card {
-    padding: 15px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .course-title {
-    margin: 0;
-    font-weight: bold;
-    flex: 1;
-  }
-  
-  .course-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .course-btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .edit-btn {
-    background-color: #007BFF;
-    color: white;
-    transition: background-color 0.2s;
+.custom-card-header {
+  background-color: blue; 
 }
 
-.delete-btn {
-    background-color: #FF5733;
-    color: white;
-    transition: background-color 0.2s;
+.card-body {
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.course-section {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.course-input-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the input and buttons */
+  margin-left: 20px;
+}
+
+.course-input {
+  flex: 1; /* Allows the input to take up the available width */
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.course-button {
+  margin-right: 10px; /* space between buttons */
+}
+
+
+.add-button {
+  background-color: #28A745; 
+  color: white;
+}
+
+.update-button {
+  background-color: #007BFF; 
+  color: white;
 }
 
 .course-button:hover {
-    opacity: 0.9;
+  opacity: 0.9; /* Slight fade on hover for a more interactive feel */
 }
-  
-  .d-block {
-    display: block; /* makes sure the link uses the full width */
-    margin-bottom: 10px; /* space between link and buttons */
+
+.dashboard-container {
+  padding: 20px;
+  background-color: #f4f4f4;
 }
-  
+
+.course-card {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-title {
+  margin: 0;
+  font-weight: bold;
+  flex: 1;
+}
+
+.course-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.course-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-btn {
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.delete-btn {
+  background-color: #FF5733;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.course-button:hover {
+  opacity: 0.9;
+}
+
+.d-block {
+  display: block;
+  margin-bottom: 10px; /* space between link and buttons */
+}
+
+.course-button {
+  padding: 10px 20px; /* Adjust padding to match the design */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.2s;
+  margin-right: 10px; /* Space between buttons */
+  /* Remove default button border on focus (optional) */
+  outline: none; 
+}
+
+.add-button {
+  background-color: #28A745; /* Green background */
+  color: white;
+}
+
+.update-button {
+  background-color: #007BFF; /* Blue background */
+  color: white;
+}
+
+.edit-btn {
+  background-color: #ffc107; /* Yellow background for edit */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red background for delete */
+  color: white;
+}
+
+.course-button:hover {
+  opacity: 0.8; /* Slight fade effect on hover */
+}
+
+.card {
+  position: relative; /* Added to position the buttons absolutely within the card */
+  width: 100%; /* Adjust as needed */
+}
+
+.edit-btn, .delete-btn {
+  position: absolute; /* Position your buttons absolutely within the card */
+  bottom: 10px; /* Distance from bottom of the card */
+}
+
+.edit-btn {
+  right: 100px; /* Example distance from the right, adjust as needed */
+  background-color: #ffc107; /* Yellow background */
+}
+
+.delete-btn {
+  right: 10px; /* Example distance from the right, adjust as needed */
+  background-color: #dc3545; /* Red background */
+}
+
+.card-body {
+  padding-bottom: 40px; /* Add padding at the bottom to account for the buttons */
+}
+
+/* Button hover effects */
+.edit-btn:hover, .delete-btn:hover {
+  opacity: 0.8;
+}
+
