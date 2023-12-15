@@ -1,36 +1,18 @@
 import ModuleList from "./ModuleList";
-import { FaGlasses } from "react-icons/fa"
-import "./index.css"
+import {useLocation} from "react-router-dom";
 
 function Modules() {
+  const isModule = !useLocation().pathname.includes("Home");
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
-      <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-        <button className="button-style"><FaGlasses style={{ marginRight: '5px' }} />Student View</button>
+      <div className={'pe-5'}>
+        {isModule &&
+            <div className="fs-3 mb-2">
+              Modules
+            </div>
+        }
+          <ModuleList/>
       </div>
-      <hr />
-    
-          <ModuleList />
-        </div>
   );
 }
 
 export default Modules;
-// import ModuleList from "./ModuleList";
-// import { FaGlasses } from "react-icons/fa"
-// import "./index.css"
-
-// function Modules() {
-//   return (
-//     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
-//       <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-//         <button className="button-style"><FaGlasses style={{ marginRight: '5px' }} />Student View</button>
-//       </div>
-//       <hr />
-    
-//           <ModuleList />
-//         </div>
-//   );
-// }
-
-// export default Modules;

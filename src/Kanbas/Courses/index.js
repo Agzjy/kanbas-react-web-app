@@ -1,52 +1,52 @@
-import React from "react";
-import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
-// import JsonPre from "../../Labs/a3/JsonPre.js";
-import db from "../Database";
-import CourseNavigation from "./CourseNavigation";
-import Modules from "./Modules";
+import {Navigate, Route, Routes, useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+import "./index.css";
+import CourseHeader from "./CourseHeader";
 import Home from "./Home";
+import Modules from "./Modules";
 import Assignments from "./Assignments";
-import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-import { AiOutlineMenu } from "react-icons/ai"
+import CourseNavigation from "./CourseNavigation";
+import axios from "axios";
 
 function Courses() {
-  const { courseId } = useParams();
-  const {pathname} = useLocation();
-  // const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const [screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
-  return (
-    <div>
-      <h1 style={{ color: 'red' }}>
-      <AiOutlineMenu /> Courses {course._id} FA23 / {screen}
-    </h1>
-      <CourseNavigation />
-      <div>
-        <div
-          className="overflow-y-scroll position-fixed bottom-0 end-0"
-          style={{
-            left: "320px",
-            top: "50px",
-          }}
-        >
-          <Routes>
-            <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home/>} />
-            <Route path="Modules" element={<Modules/>} />
-            <Route path="Piazza" element={<Navigate to="Home" />} />
-            <Route path="Assignments" element={<Assignments/>} />
-            <Route
-              path="Assignments/:assignmentId"
-              element={<AssignmentEditor/>}
-            />
-            <Route path="Grades" element={<Grades/>} />
-          </Routes>
-        </div>
-      </div>
+  const {courseId} = useParams();
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState([]);
 
-    </div>
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+  return (
+      <>
+        <CourseHeader course={course}/>
+        <div className="row mt-4 px-3 px-md-0">
+          <div className="col-md-2 d-none d-md-block">
+            <div className="row">
+              <div className="col">
+                <p className="wd-course-id">{course.term}</p>
+              </div>
+            </div>
+            <CourseNavigation/>
+          </div>
+          <div className="col col-md-10">
+            <Routes>
+              <Route path="/" element={<Navigate to="Home"/>}/>
+              <Route path="Home" element={<Home/>}/>
+              <Route path="Modules" element={<Modules/>}/>
+              <Route path="Assignments" element={<Assignments/>}/>
+              <Route path="Grades" element={<Grades/>}/>
+              {/* <Route path="AddAssignment" element={<AddEditAssignment/>}/> */}
+              {/* <Route path="EditAssignment/:assignmentId" element={<AddEditAssignment/>}/> */}
+            </Routes>
+          </div>
+        </div>
+      </>
   );
 }
-
 export default Courses;

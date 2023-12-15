@@ -1,47 +1,17 @@
-.container {
-    max-width: 100%;
-  }
-  
-  .row {
-    display: flex;
-  }
-  
-  .col-md-3.sidebar {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .list-group-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border: none;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-  }
-  
-  .list-group-item .icon {
-    width: 20px;
-    text-align: center;
-  }
-  
-  .section-title {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .fa-icon {
-    font-size: 1em; /* Example size, adjust as needed */
-  }
+.wd-publish-dropdown {
+  display: contents;
+}
 
-  .list-group-item {
-    background-color: #f8f9fa !important; /* Light gray background */
-    color: #000 !important; /* Black text color */
-    white-space: nowrap; /* Prevents the text from wrapping */
-    overflow: hidden; /* Ensures the content doesn't spill out */
-    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
-  }
+.wd-bg-color-light-green {
+  background-color: #a0d6a0;
+}
+
+.wd-bg-color-light-green:hover {
+  background-color: #a0d6a0;
+}
+
+.wd-todo-subtext {
+  color: #677179;
+  font-size: 12px;
+}
   
