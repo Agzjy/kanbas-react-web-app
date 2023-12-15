@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 function Dashboard() {
-  // { courses, course, setCourse, addNewCourse,
-  //   deleteCourse, updateCourse }
-  
+
   const [courses, setCourses] = useState(db.courses);
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",

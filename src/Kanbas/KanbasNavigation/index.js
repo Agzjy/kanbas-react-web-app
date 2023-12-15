@@ -1,62 +1,52 @@
-import { Link, useLocation } from "react-router-dom";
-import { BiUserCircle } from "react-icons/bi";
-import { RiDashboard3Fill } from "react-icons/ri";
-import { FaBook } from "react-icons/fa";
-import { BsFillCalendar2WeekFill } from "react-icons/bs";
-import { BsFillInboxFill } from "react-icons/bs"
-import { AiOutlineClockCircle } from "react-icons/ai"
-import { PiDesktopFill } from "react-icons/pi"
-import { FaSignOutAlt } from "react-icons/fa"
-import { BsQuestionCircle } from "react-icons/bs"
-import "./index.css";
-function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
 
-  const linkToIconMap = {
-    Account: <BiUserCircle className="wd-icon" />,
-    Dashboard: <RiDashboard3Fill className="wd-icon" />,
-    Courses: <FaBook className="wd-icon" />,
-    Calendar: <BsFillCalendar2WeekFill className="wd-icon" />,
-    Inbox: <BsFillInboxFill className="wd-icon" />,
-    History: <AiOutlineClockCircle className="wd-icon" />,
-    Studio: <PiDesktopFill className="wd-icon" />,
-    Commons: <FaSignOutAlt className="wd-icon" />,
-    Help: <BsQuestionCircle className="wd-icon" />,
-  };
+import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser, 
+  faCompass, 
+  faBook, 
+  faEnvelope, 
+  faDesktop, 
+  faSignOutAlt, 
+  faHandshake
+} from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faClock } from '@fortawesome/free-regular-svg-icons';
+import './index.css';
+import { Link, useLocation } from "react-router-dom";
+
+function KanbasNavigation() {
+  const links = [
+    { name: "Account", icon: faUser, route: "Account" },
+    { name: "Dashboard", icon: faCompass, route: "Dashboard" },
+    { name: "Courses", icon: faBook, route: "Courses" },
+    { name: "Signin", icon: faSignOutAlt, route: "Signin" },
+    { name: "Signup", icon: faSignOutAlt, route: "Signup" },
+    { name: "Calendar", icon: faCalendarAlt, route: "Calendar" },
+    { name: "Inbox", icon: faEnvelope, route: "Inbox" },
+    { name: "History", icon: faClock, route: "History" },
+    { name: "Studio", icon: faDesktop, route: "Studio" },
+    { name: "Commons", icon: faSignOutAlt, route: "Commons" },
+    { name: "Help", icon: faHandshake, route: "Help" }
+  ];
 
   const { pathname } = useLocation();
-  const getIconStyle = (link) => {
-    if (link === "Account" && pathname.includes("Account")) return "wd-icon wd-icon-account-clicked";
-    if (link === "Account") return "wd-icon wd-icon-account";
-    if (pathname.includes(link)) return "wd-icon wd-icon-clicked";
-    return "wd-icon wd-icon-other";
-  };
-
-  const getTextStyle = (link) => {
-    if (link === "Account" && pathname.includes("Account")) return "wd-text-account-clicked";
-    if (link === "Account") return "wd-text-account";
-    if (pathname.includes(link)) return "wd-text-clicked";
-    return "wd-text-other";
-  };
-
   return (
-    <div className="list-group wd-kanbas-navigation" style={{ width: 120 }}>
+    <div className="list-group kanbas-nav">
       {links.map((link, index) => (
-        <Link
-          key={index}
-          to={`/Kanbas/${link}`}
-          className={`list-group-item ${pathname.includes(link) && "active"}`}
-        >
-          <span className={getIconStyle(link)}>
-            {linkToIconMap[link]}
-          </span>
-          <br/>
-          <span className={getTextStyle(link)}>
-            {link}
-          </span>
-        </Link>
+      <Link
+        key={index}
+        to={`/Kanbas/${link.route}`}
+        className={`list-group-item ${pathname === `/Kanbas/${link.route}` && "active"}`}>
+        <div className="nav-item-content">
+          <FontAwesomeIcon className={`nav-icon ${link.colorClass}`} icon={link.icon} />
+          <span className="nav-text">{link.name}</span>
+        </div>
+      </Link>
+
+
       ))}
     </div>
   );
 }
+
 export default KanbasNavigation;
